@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans';
+}
+
+****************************HEADER**************************** header {
+  width: 1200px;
+}
+
+.header {
+  padding: 40px 165px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_button {
+  width: 167px;
+  height: 56px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  text-decoration: none;
+  color: #ffff;
+
+  background: #13183F;
+  border-radius: 28px;
+}
+
+
+
+****************************Display_section**************************** 
+
+
+.display_inner {}
+
+.display_left {
+  padding-left: 165px;
+  padding-top: 185px;
+}
+
+.display_title {
+  width: 457px;
+  height: 143px;
+
+  font-style: normal;
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 71px;
+  color: #13183F;
+}
+
+.display_text {
+  padding-top: 29px;
+  width: 445px;
+  height: 85px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #83869A;
+}
+
+.display_buttons{
+  padding-top: 70px;
+}
+
+.display_button {
+  text-decoration: none;
+}
+
+.display_button-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 167px;
+  height: 63px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffff;
+  background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+  border-radius: 31.5px;
+}
+
+.display_right {
+  display: flex;
+  
+}
+
+.display_img {
+  position: absolute;
+  top: -10vw;
+  right: -14vw;
+  position: fixed;
+  width: 60.63vw;
+  height: 55.13vw;
+}
+
+@media only screen and (max-width: 768px) {
+  .display_left {
+      width: 51.82vw;
+  }
+}
+
+.hero_img-dekt{
+  width: 1050px;
+}
