@@ -5,11 +5,18 @@
 }
 
 body {
+  position: relative;
+  width: 1440px;
+  height: 1845px;
   font-family: 'Plus Jakarta Sans';
+  background: linear-gradient(180deg, #FFFFFF 0%, #f1f1f9 100%);
+  overflow-x: hidden;
 }
 
-****************************HEADER**************************** header {
-  width: 1200px;
+/* ****************************HEADER****************************  */
+
+header {
+  width: 1440px;
 }
 
 .header {
@@ -34,14 +41,17 @@ body {
 
   background: #13183F;
   border-radius: 28px;
+  z-index: 1;
+
+  transition: all .3s;
 }
 
+.header_button:hover{
+  background-color: #666CA3;
+}
 
+/* ****************************Display_section****************************  */
 
-****************************Display_section**************************** 
-
-
-.display_inner {}
 
 .display_left {
   padding-left: 165px;
@@ -78,6 +88,8 @@ body {
   text-decoration: none;
 }
 
+
+
 .display_button-text {
   display: flex;
   justify-content: center;
@@ -89,21 +101,26 @@ body {
   line-height: 28px;
   color: #ffff;
   background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+  
   border-radius: 31.5px;
+
+  transition: all .3s;
+}
+
+.display_button-text:hover{
+  opacity: 0.5;
 }
 
 .display_right {
   display: flex;
-  
 }
 
 .display_img {
   position: absolute;
-  top: -10vw;
-  right: -14vw;
-  position: fixed;
-  width: 60.63vw;
-  height: 55.13vw;
+  top: -7vw;
+  right: -8vw;
+  width: 55vw;
+  height: 50vw;
 }
 
 @media only screen and (max-width: 768px) {
@@ -114,4 +131,174 @@ body {
 
 .hero_img-dekt{
   width: 1050px;
+}
+
+
+/* **************************** section row ****************************  */
+
+.display_inner-row{
+  padding-top: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.display_col{
+  margin-right: 30px;
+  width: 350px;
+  height: 322px;
+
+  background: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+  border-radius: 15px;
+}
+
+.display_col-texts {
+  padding: 64px 32px 138px;
+  width: 286px;
+}
+.display_col-text {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 40px;
+  color: #FFFFFF;
+}
+
+.display_col2-animation {
+  margin-right: 30px;
+  width: 350px;
+  height: 322px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+  border-radius: 15px;
+}
+
+.display_col2-animation-titles {
+  padding: 64px 197px 0 32px;
+}
+
+.display_col2-animation-title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 30px;
+  color: #13183F;
+}
+
+.display_col2-animation-texts {
+  padding: 24px 32px 92px;
+  z-index: 1;
+}
+
+.displayc_col2-animation-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #83869A;
+}
+
+.display_col2-animation-links{
+  width: 104px;
+  padding-top: 24px;
+}
+
+.display_col2-animation-link{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #F74780;
+  text-decoration: none;
+
+  transition: all .3s;
+}
+
+.display_col2-animation-link:hover{
+  opacity: 0.5;
+}
+
+.display_col2_animation-img{
+  width: 56px;
+  height: 5px;
+  position: absolute;
+  margin-bottom: 25.5%;
+  padding-right: 21%;
+
+}
+
+
+.display_col2-design {
+  margin-left: 30px;
+  width: 350px;
+  height: 322px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 25px 50px rgba(6, 22, 141, 0.0442381);
+  border-radius: 15px;
+}
+
+.display_col2-design-titles {
+  padding: 64px 197px 0 32px;
+}
+
+.display_col2-design-title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 30px;
+  color: #13183F;
+}
+
+.display_col2-design-texts {
+  padding: 24px 32px 92px;
+}
+
+.displayc_col2-design-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #83869A;
+}
+
+.display_col2-design-links{
+  width: 104px;
+  padding-top: 52px;
+}
+
+.display_col2-design-link{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #F74780;
+  text-decoration: none;
+
+  transition: all .3s;
+}
+
+.display_col2-design-link:hover{
+  opacity: 0.5;
+}
+
+.display_col2_design-img{
+  width: 56px;
+  position: absolute;
+  margin-left: 40%;
+  margin-bottom: 22%;
+}
+
+.display_col-photography{
+  position: absolute;
+  margin-bottom: 21%;
+  margin-right: 70%;
+}
+
+.display_inner-row2{
+  padding-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
 }
