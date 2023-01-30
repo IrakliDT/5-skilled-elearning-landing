@@ -26,6 +26,14 @@ header {
   align-items: center;
 }
 
+.header_logo-dark{
+  transition: all .5s;
+}
+
+.header_logo-dark:hover{
+  transform: rotate(20deg);
+}
+
 .header_button {
   width: 167px;
   height: 56px;
@@ -299,6 +307,55 @@ header {
   padding-top: 80px;
   display: flex;
   justify-content: center;
+  align-items: center; 
+}
+
+
+/* **************************** FOOTER ****************************  */
+
+footer{
+  padding-top: 140px;
+}
+
+.footer {
+  width: 1490px;
+  height: 120px;
+  padding: 1px 200px 0 155px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  
+
+  background: #13183F;
+}
+
+.footer_button{
+  width: 167px;
+  height: 56px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  text-decoration: none;
+  color: #ffff;
+
+  background: linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+  border-radius: 28px;
+  z-index: 1;
+
+  transition: all .5s;
+}
+
+.footer_button:hover{
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
+}
+
+.logo_light-img{
+  transition: all .5s;
+}
+
+.logo_light-img:hover{
+  transform: rotate(-20deg);
 }
